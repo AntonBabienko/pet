@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finsweet</title>
+    <link rel="stylesheet" href="styles__blog.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="header__logo">
+            <svg width="140" height="29" viewBox="0 0 140 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_1241)">
+                    <path
+                        d="M139.752 21.6557V25.1203H136.846C133.744 25.0228 132.087 23.3481 132.087 20.2026V12.2899H130.058V9.25068H132.087V5.84814H136.376V9.21523H139.654V12.2456H136.376V19.7773C136.376 20.7962 136.58 21.6114 138.148 21.6114L139.752 21.6557Z"
+                        fill="white" />
+                    <path
+                        d="M112.966 17.2163V16.9859C112.919 15.9668 113.075 14.9486 113.422 13.9896C113.77 13.0305 114.304 12.1496 114.993 11.3972C115.682 10.6449 116.513 10.0359 117.438 9.60515C118.362 9.17443 119.363 8.93046 120.382 8.88721C120.586 8.88721 120.799 8.88721 121.002 8.88721C125.052 8.88721 128.605 11.2442 128.605 16.8619V18.0581H117.352C117.467 20.6454 118.867 22.1075 121.224 22.1075C123.253 22.1075 124.201 21.2214 124.476 19.9277H128.525C128.029 23.3037 125.335 25.1821 121.073 25.1821C116.395 25.1467 112.966 22.1872 112.966 17.2163ZM124.387 15.3467C124.237 12.9897 123.049 11.8556 120.985 11.8556C118.92 11.8556 117.733 13.1315 117.44 15.3467H124.387Z"
+                        fill="white" />
+                    <path
+                        d="M95.4569 17.2163V16.9859C95.4105 15.9683 95.5651 14.9514 95.9119 13.9935C96.2586 13.0356 96.7908 12.1554 97.4779 11.4033C98.165 10.6511 98.9936 10.0418 99.9164 9.61008C100.839 9.17836 101.838 8.93272 102.856 8.88721C103.059 8.88721 103.272 8.88721 103.476 8.88721C107.525 8.88721 111.087 11.2442 111.087 16.8619V18.0581H99.843C99.9582 20.6454 101.358 22.1075 103.715 22.1075C105.744 22.1075 106.692 21.2214 106.967 19.9277H111.016C110.511 23.3037 107.818 25.1821 103.556 25.1821C98.886 25.1467 95.4569 22.1872 95.4569 17.2163ZM106.878 15.3467C106.728 12.9897 105.54 11.8556 103.476 11.8556C101.411 11.8556 100.259 13.167 99.9316 15.3378L106.878 15.3467Z"
+                        fill="white" />
+                    <path
+                        d="M70.8861 9.21533H75.4228L78.1962 19.7242L81.2355 9.21533H84.7798L87.5266 19.7242L90.4507 9.21533H94.6064L89.6798 24.828H85.4266L82.7684 15.028L79.9241 24.828H75.6178L70.8861 9.21533Z"
+                        fill="white" />
+                    <path
+                        d="M56.4696 19.9191H60.519C60.7051 21.328 61.4051 22.1343 63.2658 22.1343C64.9316 22.1343 65.7025 21.5052 65.7025 20.4331C65.7025 19.3609 64.8164 18.909 62.5481 18.59C58.3924 17.9609 56.7886 16.7647 56.7886 13.7166C56.7886 10.4647 59.7658 8.85205 62.9911 8.85205C66.4557 8.85205 69.0696 10.1103 69.4418 13.6989H65.4456C65.4201 13.4215 65.3398 13.1518 65.2095 12.9056C65.0792 12.6593 64.9014 12.4414 64.6864 12.2642C64.4714 12.0871 64.2234 11.9543 63.9567 11.8736C63.6901 11.7928 63.4101 11.7657 63.1329 11.7938H63C61.6 11.7938 60.7848 12.4495 60.7848 13.4065C60.7848 14.3634 61.538 14.7799 63.824 15.1077C67.705 15.6926 69.8759 16.6761 69.8759 20.0166C69.8759 23.3571 67.4215 25.147 63.3101 25.147C59.1987 25.147 56.5848 23.2951 56.4696 19.9191Z"
+                        fill="white" />
+                    <path
+                        d="M39.262 9.21514H43.5506V11.6873C44.034 10.7799 44.7677 10.0304 45.6646 9.52772C46.5614 9.02509 47.5838 8.79051 48.6101 8.85185C51.6493 8.85185 53.8556 10.7038 53.8556 14.9303V24.8632H49.6202V15.5506C49.6202 13.4329 48.7961 12.4227 46.8822 12.4227C46.4777 12.3875 46.0702 12.4325 45.6831 12.5552C45.296 12.6779 44.937 12.8758 44.6266 13.1376C44.3162 13.3995 44.0606 13.72 43.8744 14.0808C43.6883 14.4417 43.5752 14.8358 43.5417 15.2405C43.5196 15.4288 43.5196 15.6192 43.5417 15.8076V24.8278H39.262V9.21514Z"
+                        fill="white" />
+                    <path
+                        d="M30.986 5.28988C30.9705 4.86229 31.0822 4.4397 31.3069 4.07562C31.5317 3.71153 31.8595 3.42233 32.2487 3.24462C32.6379 3.06691 33.0711 3.00868 33.4934 3.07731C33.9158 3.14594 34.3082 3.33834 34.6212 3.63016C34.9341 3.92197 35.1534 4.30007 35.2513 4.71659C35.3492 5.13311 35.3213 5.56932 35.1712 5.96999C35.0211 6.37065 34.7554 6.71776 34.4079 6.96737C34.0604 7.21697 33.6466 7.35785 33.219 7.37216H33.1392C32.8738 7.38896 32.6077 7.35319 32.3561 7.2669C32.1046 7.18062 31.8725 7.04551 31.6733 6.86934C31.4741 6.69317 31.3116 6.4794 31.1952 6.24029C31.0788 6.00117 31.0107 5.74143 30.9949 5.47596C30.9875 5.41422 30.9846 5.35204 30.986 5.28988ZM30.986 9.2152H35.319V24.8279H31.0038L30.986 9.2152Z"
+                        fill="white" />
+                    <path
+                        d="M14.6556 3.49121H28.3544V7.27476H19.4936V12.9191H26.5113V16.5608H19.4848V24.8279H14.6556V3.49121Z"
+                        fill="white" />
+                    <path
+                        d="M6.38861 10.4734C6.38861 11.8114 6.38861 13.4418 4.54557 14.1063C6.43291 14.7532 6.38861 16.1266 6.38861 17.562V22.8785C6.38861 23.8886 6.7962 24.5 7.52279 24.6506C7.68244 24.7045 7.85064 24.7285 8.01899 24.7215H9.79114V28.2658H6.86709C3.7481 28.2658 2.02911 26.4937 2.02911 23.2063V16.9152C2.00699 16.5922 1.86458 16.2893 1.63 16.0662C1.39541 15.8431 1.08571 15.716 0.762025 15.7101H0V12.6H0.762025C1.09216 12.5956 1.40796 12.4644 1.64388 12.2334C1.87981 12.0024 2.01776 11.6895 2.02911 11.3595V4.97975C2.02911 1.74557 3.71266 0 6.86709 0H9.81772V3.49114H8.04557C7.87702 3.49163 7.70958 3.51854 7.54937 3.57089C6.82279 3.75696 6.41519 4.35949 6.41519 5.34304L6.38861 10.4734Z"
+                        fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1_1241">
+                        <rect width="140" height="28.3544" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div>
+
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle">
+                <samp></samp>
+            </label>
+
+            <ul class="header__menu">
+                <a href="#" class="header__link">Home </a>
+                <a href="#" class="header__link">Blog </a>
+                <a href="#" class="header__link">About Us </a>
+                <a href="#" class="header__link">Contact us </a>
+                <button class="header__link_white">Subscribe </button>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section-one">
+        <div class="section-one__hero">
+            <p>Posted on <spam>startup</spam>
+            </p>
+            <h1>Step-by-step guide to choosing great font pairs</h1>
+            <p>By James West | May 23, 2022</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident.</p>
+            <button class="section-one__button">Read More > </button>
+        </div>
+
+    </section>
+
+    <section class="section-two">
+
+        <div class="section-two__post">
+            <h2>Featured Post</h2>
+            <div class="section-two__post-info">
+                <img class="section-two__img" src="images/white-concrete-building-1838640.png" alt="">
+                <p>By John Doe l May 23, 2022</p>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint
+                    occaecat cupidatat non proident.</p>
+                <button>Read More ></button>
+            </div>
+        </div>
+
+        <div class="section-two__all-posts">
+            <h2>All Posts</h2>
+            <ul class="section-two__all-posts-info">
+
+                <li>
+                    <p>By John Deo l Aug 23, 2021</p>
+                    <h4>8 Figma design systems that you can download for free today.</h4>
+                </li>
+
+                <li>
+                    <p>By John Deo l Aug 23, 2021</p>
+                    <h4>8 Figma design systems that you can download for free today.</h4>
+                </li>
+
+                <li>
+                    <p>By John Deo l Aug 23, 2021</p>
+                    <h4>8 Figma design systems that you can download for free today.</h4>
+                </li>
+                <li>
+                    <p>By John Deo l Aug 23, 2021</p>
+                    <h4>8 Figma design systems that you can download for free today.</h4>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </section>
+
+
+
+
+    <section class="section-three">
+        <img src="images/pattern.png" alt="">
+        <div class="section-three__background_color">
+
+            <div class="section-three__about-as">
+                <p>ABOUT US</p>
+                <h3>We are a community of content writers who share their learnings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.</p>
+                <a href="#">Read More></a>
+            </div>
+
+            <div class="section-three__our-mision">
+
+                <p>Our mision</p>
+                <h3>Creating valuable content for creatives all around the world</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section-four">
+
+        <h2>Choose A Catagory</h2>
+        <ul>
+            <li>
+                <div class="background_icon-1">
+                    <img src="icons/Icon-1.png" alt="">
+
+                </div>
+                <h3>Business</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </li>
+
+            <li>
+                <div class="background_icon-2">
+                    <img src="icons/shuttle.png" alt="">
+
+                </div>
+                <h3>Startup</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </li>
+
+            <li>
+                <div class="background_icon-3">
+                    <img src="icons/icon-3.png" alt="">
+
+                </div>
+                <h3>Economy</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </li>
+
+            <li>
+                <div class="background_icon-4">
+                    <img src="icons/Group.png" alt="">
+
+                </div>
+                <h3>Technology</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </li>
+        </ul>
+
+        <div class="section-four__info">
+
+            <img class="section-four__img" src="images/close-up-photography-of-man-wearing-sunglasses-1212984.png"
+                alt="">
+            <div class="section-four__text">
+                <p>Why we started</p>
+                <h2>It started out as a simple idea and evolved into our passion</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <button>Discover our story ></button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section-five">
+
+        <h2>List of Authors</h2>
+        <ul class="section-five__Authors">
+            <li class="section-five__Author-1">
+                <img src="images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png" alt="">
+                <h3>Floyd Miles</h3>
+                <p>Content Writer @Company</p>
+                <div class="section-five__icon">
+                    <a href="#"><img src="icons/Negative.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative1.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative2.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative3.png" alt=""></a>
+                </div>
+            </li>
+
+            <li class="section-five__Author-2">
+                <img src="images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png" alt="">
+                <h3>Dianne Russell</h3>
+                <p>Content Writer @Company</p>
+                <div class="section-five__icon">
+                    <a href="#"><img src="icons/Negative.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative1.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative2.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative3.png" alt=""></a>
+                </div>
+            </li>
+
+            <li class="section-five__Author-3">
+                <img src="images/fashion-woman-cute-shoes-5704849.png" alt="">
+                <h3>Jenny Wilson</h3>
+                <p>Content Writer @Company</p>
+                <div class="section-five__icon">
+                    <a href="#"><img src="icons/Negative.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative1.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative2.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative3.png" alt=""></a>
+                </div>
+            </li>
+
+            <li class="section-five__Author-4">
+                <img src="images/content-baker-with-delicious-puff-in-cafeteria-6205509.png" alt="">
+                <h3>Leslie Alexander</h3>
+                <p>Content Writer @Company</p>
+                <div class="section-five__icon">
+                    <a href="#"><img src="icons/Negative.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative1.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative2.png" alt=""></a>
+                    <a href="#"><img src="icons/Negative3.png" alt=""></a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="section-five__featured">
+            <li>
+                <p>We are</p>
+                <h4>Featured in</h4>
+            </li>
+            <li>
+                <img src="icons/Logo 1.png" alt="">
+            </li>
+            <li>
+                <img src="icons/Logo 2.png" alt="">
+            </li>
+            <li>
+                <img src="icons/Logo 3.png" alt="">
+            </li>
+            <li>
+                <img src="icons/Logo 4.png" alt="">
+            </li>
+            <li>
+                <img src="icons/Logo 5.png" alt="">
+            </li>
+        </ul>
+
+        <div class="section-five__TESTIMONIALs">
+            <div class="section-five__TESTIMONIAL">
+                <p>TESTIMONIALs</p>
+                <h2>What people say about our blog</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="section-five__TESTIMONIAL_w">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.</p>
+                <div class="section-five__Author">
+                    <div class="section-five__author-2">
+                        <img src="images/Profile picture.png" alt="">
+                        <h4>Jonathan Vallem</h4>
+                        <p>New york, USA</p>
+                    </div>
+                    <div class="section-five__button">
+                        <div>
+                            &lt;
+                        </div>
+                        <div>
+                            &gt;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-six">
+            <div class="section-six__Join-Now">
+                <h2>Join our team to be a part of our story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div><button>Join Now</button></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="footer-header">
+        <div class="footer__logo">
+            <svg width="140" height="29" viewBox="0 0 140 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_1241)">
+                    <path
+                        d="M139.752 21.6557V25.1203H136.846C133.744 25.0228 132.087 23.3481 132.087 20.2026V12.2899H130.058V9.25068H132.087V5.84814H136.376V9.21523H139.654V12.2456H136.376V19.7773C136.376 20.7962 136.58 21.6114 138.148 21.6114L139.752 21.6557Z"
+                        fill="white" />
+                    <path
+                        d="M112.966 17.2163V16.9859C112.919 15.9668 113.075 14.9486 113.422 13.9896C113.77 13.0305 114.304 12.1496 114.993 11.3972C115.682 10.6449 116.513 10.0359 117.438 9.60515C118.362 9.17443 119.363 8.93046 120.382 8.88721C120.586 8.88721 120.799 8.88721 121.002 8.88721C125.052 8.88721 128.605 11.2442 128.605 16.8619V18.0581H117.352C117.467 20.6454 118.867 22.1075 121.224 22.1075C123.253 22.1075 124.201 21.2214 124.476 19.9277H128.525C128.029 23.3037 125.335 25.1821 121.073 25.1821C116.395 25.1467 112.966 22.1872 112.966 17.2163ZM124.387 15.3467C124.237 12.9897 123.049 11.8556 120.985 11.8556C118.92 11.8556 117.733 13.1315 117.44 15.3467H124.387Z"
+                        fill="white" />
+                    <path
+                        d="M95.4569 17.2163V16.9859C95.4105 15.9683 95.5651 14.9514 95.9119 13.9935C96.2586 13.0356 96.7908 12.1554 97.4779 11.4033C98.165 10.6511 98.9936 10.0418 99.9164 9.61008C100.839 9.17836 101.838 8.93272 102.856 8.88721C103.059 8.88721 103.272 8.88721 103.476 8.88721C107.525 8.88721 111.087 11.2442 111.087 16.8619V18.0581H99.843C99.9582 20.6454 101.358 22.1075 103.715 22.1075C105.744 22.1075 106.692 21.2214 106.967 19.9277H111.016C110.511 23.3037 107.818 25.1821 103.556 25.1821C98.886 25.1467 95.4569 22.1872 95.4569 17.2163ZM106.878 15.3467C106.728 12.9897 105.54 11.8556 103.476 11.8556C101.411 11.8556 100.259 13.167 99.9316 15.3378L106.878 15.3467Z"
+                        fill="white" />
+                    <path
+                        d="M70.8861 9.21533H75.4228L78.1962 19.7242L81.2355 9.21533H84.7798L87.5266 19.7242L90.4507 9.21533H94.6064L89.6798 24.828H85.4266L82.7684 15.028L79.9241 24.828H75.6178L70.8861 9.21533Z"
+                        fill="white" />
+                    <path
+                        d="M56.4696 19.9191H60.519C60.7051 21.328 61.4051 22.1343 63.2658 22.1343C64.9316 22.1343 65.7025 21.5052 65.7025 20.4331C65.7025 19.3609 64.8164 18.909 62.5481 18.59C58.3924 17.9609 56.7886 16.7647 56.7886 13.7166C56.7886 10.4647 59.7658 8.85205 62.9911 8.85205C66.4557 8.85205 69.0696 10.1103 69.4418 13.6989H65.4456C65.4201 13.4215 65.3398 13.1518 65.2095 12.9056C65.0792 12.6593 64.9014 12.4414 64.6864 12.2642C64.4714 12.0871 64.2234 11.9543 63.9567 11.8736C63.6901 11.7928 63.4101 11.7657 63.1329 11.7938H63C61.6 11.7938 60.7848 12.4495 60.7848 13.4065C60.7848 14.3634 61.538 14.7799 63.824 15.1077C67.705 15.6926 69.8759 16.6761 69.8759 20.0166C69.8759 23.3571 67.4215 25.147 63.3101 25.147C59.1987 25.147 56.5848 23.2951 56.4696 19.9191Z"
+                        fill="white" />
+                    <path
+                        d="M39.262 9.21514H43.5506V11.6873C44.034 10.7799 44.7677 10.0304 45.6646 9.52772C46.5614 9.02509 47.5838 8.79051 48.6101 8.85185C51.6493 8.85185 53.8556 10.7038 53.8556 14.9303V24.8632H49.6202V15.5506C49.6202 13.4329 48.7961 12.4227 46.8822 12.4227C46.4777 12.3875 46.0702 12.4325 45.6831 12.5552C45.296 12.6779 44.937 12.8758 44.6266 13.1376C44.3162 13.3995 44.0606 13.72 43.8744 14.0808C43.6883 14.4417 43.5752 14.8358 43.5417 15.2405C43.5196 15.4288 43.5196 15.6192 43.5417 15.8076V24.8278H39.262V9.21514Z"
+                        fill="white" />
+                    <path
+                        d="M30.986 5.28988C30.9705 4.86229 31.0822 4.4397 31.3069 4.07562C31.5317 3.71153 31.8595 3.42233 32.2487 3.24462C32.6379 3.06691 33.0711 3.00868 33.4934 3.07731C33.9158 3.14594 34.3082 3.33834 34.6212 3.63016C34.9341 3.92197 35.1534 4.30007 35.2513 4.71659C35.3492 5.13311 35.3213 5.56932 35.1712 5.96999C35.0211 6.37065 34.7554 6.71776 34.4079 6.96737C34.0604 7.21697 33.6466 7.35785 33.219 7.37216H33.1392C32.8738 7.38896 32.6077 7.35319 32.3561 7.2669C32.1046 7.18062 31.8725 7.04551 31.6733 6.86934C31.4741 6.69317 31.3116 6.4794 31.1952 6.24029C31.0788 6.00117 31.0107 5.74143 30.9949 5.47596C30.9875 5.41422 30.9846 5.35204 30.986 5.28988ZM30.986 9.2152H35.319V24.8279H31.0038L30.986 9.2152Z"
+                        fill="white" />
+                    <path
+                        d="M14.6556 3.49121H28.3544V7.27476H19.4936V12.9191H26.5113V16.5608H19.4848V24.8279H14.6556V3.49121Z"
+                        fill="white" />
+                    <path
+                        d="M6.38861 10.4734C6.38861 11.8114 6.38861 13.4418 4.54557 14.1063C6.43291 14.7532 6.38861 16.1266 6.38861 17.562V22.8785C6.38861 23.8886 6.7962 24.5 7.52279 24.6506C7.68244 24.7045 7.85064 24.7285 8.01899 24.7215H9.79114V28.2658H6.86709C3.7481 28.2658 2.02911 26.4937 2.02911 23.2063V16.9152C2.00699 16.5922 1.86458 16.2893 1.63 16.0662C1.39541 15.8431 1.08571 15.716 0.762025 15.7101H0V12.6H0.762025C1.09216 12.5956 1.40796 12.4644 1.64388 12.2334C1.87981 12.0024 2.01776 11.6895 2.02911 11.3595V4.97975C2.02911 1.74557 3.71266 0 6.86709 0H9.81772V3.49114H8.04557C7.87702 3.49163 7.70958 3.51854 7.54937 3.57089C6.82279 3.75696 6.41519 4.35949 6.41519 5.34304L6.38861 10.4734Z"
+                        fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1_1241">
+                        <rect width="140" height="28.3544" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <ul class="footer__menu">
+            <a href="#" class="footer__link">Home </a>
+            <a href="#" class="footer__link">Blog </a>
+            <a href="#" class="footer__link">About Us </a>
+            <a href="#" class="footer__link">Contact us </a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+        </ul>
+    </div>
+
+    <footer>
+
+        <div class="footer__input">
+            <h2>Subscribe to our news letter to get latest updates and news</h2>
+            <input type="email" placeholder="Enter Your Email">
+            <button>Subscribe</button>
+        </div>
+
+    </footer>
+
+    <div class="contact">
+        <div>
+            <p>Finstreet 118 2561 Fintown</p>
+            <p>Hello@finsweet.com 020 7993 2905</p>
+        </div>
+        <div>
+            <a href="#"><img src="icons/Vector1.png" alt=""></a>
+            <a href="#"><img src="icons/Vector2.png" alt=""></a>
+            <a href="#"><img src="icons/Vector3.png" alt=""></a>
+            <a href="#"><img src="icons/Vector4.png" alt=""></a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
